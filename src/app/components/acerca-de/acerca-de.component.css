@@ -1,0 +1,111 @@
+.row{
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.row{
+    background:rgb(88, 24, 69);
+}
+
+div{
+    color: #fff;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Modificación responsive para la foto de perfil */
+/* #fotoPerfil{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgb(134, 104, 125);
+    left: 30%;
+    top: 930px;
+} */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    #fotoPerfil{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        width: 40%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(134, 104, 125);
+        left: 30%;
+        top: 930px;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #fotoPerfil{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(134, 104, 125);
+        left: 5%;
+        top: 650px;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #fotoPerfil{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(134, 104, 125);
+        left: 5%;
+        top: 620px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #fotoPerfil{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(134, 104, 125);
+        left: 3%;
+        top: 600px;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    #fotoPerfil{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(134, 104, 125);
+        left: 5%;
+        top: 600px;
+    }
+ }
+
+
+/* Modificación de estilo de Mi Nombre */
+#nombre{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+h1{
+    text-shadow: -4px 3px 0 #900C3F, -8px 6px 0 #0a0e27;
+}
+
+.titulo{
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+}

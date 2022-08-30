@@ -1,0 +1,69 @@
+<div class="row">
+    <div class="div1">
+        <div id="experiencia">
+            <section>
+                <h1 class="heading titulo">Experiencia Laboral</h1>
+                <div class="experiencia-block" *ngIf="isLogged">
+                    <div style="text-align:center" *ngIf="isLogged">
+                        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+                            <i class="bi bi-card-text"></i> Añadir Experiencia
+                        </button>
+                    </div>
+                </div>
+
+                <div class="experiencia-block" *ngFor="let Experiencia of expe">
+                    <h3>{{Experiencia.nombreE}}</h3>
+                    <h5>{{Experiencia.descripcionE}}</h5>
+                    <img class="imagenes3" src="../../../assets/maletin.png">
+                    <div style="float:right" *ngIf="isLogged">
+                        <button class="btn btn-success" routerLink="/editexp/{{Experiencia.id}}">
+                            <i class="bi bi-pencil-fill"></i></button>
+                    </div>
+                    <div style="float:right" *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                            <i class="bi bi-trash-fill"></i></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+   </div>
+</div>
+
+
+
+    <!-- <div class="col-lg-1"></div> -->
+    <!-- <div class="col-lg-11">
+        <ul>
+            <li><h2>Pasantía EIKON, Ensamblado de computadoras</h2></li>
+            <h3>Octubre 2021</h3>
+            <p>- Ensamblado de monitores, gabinetes, etc.<br>
+            - Instalación de Sistema Operativo.</p>
+        </ul>
+        <ul>
+            <li><h2>Super Imperio S.A., Servicio de atención al cliente</h2></li>
+            <h3>Diciembre 2020 - Febrero 2021</h3>
+            <p><b>Depósito central:</b><br>
+            - Control de stock de mercancías.<br>
+            - Comprobación del estado de la mercancía recibida.<br>
+            - Actualización de inventario.<br>
+            - Comprobación, cotejar y marcar la mercancía que entraba en el almacén.<br>
+            - Clasificación de las cargas para ser ubicadas en el lugar y posición correctos del almacén.<br>
+            <b>Sucursal Supermercado.</b><br>
+            - Atención al público en sucursales de venta.</p>
+        </ul>
+        <ul>
+            <li><h2>Ejército Argentino, Soldado Voluntario</h2></li>
+            <h3>Junio 2015 - Marzo 2020</h3>
+            <p>- Tareas administrativas.<br>
+            - Servicios de guardia.<br>
+            - Mantenimiento de instalaciones, armamento y equipamiento militar.</p>
+        </ul>
+        <ul>
+            <li><h2>Estación de Servicio Esso, Servicio de atención al cliente</h2></li>
+            <h3>Octubre 2012 - Junio 2015</h3>
+            <p>- Atención al público y venta en Shop.<br>
+            - Servicio de cafetería y panadería.<br>
+            - Control de stock e inventario.</p>
+        </ul>
+    </div>
+</div> -->

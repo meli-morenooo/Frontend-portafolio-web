@@ -1,0 +1,84 @@
+<div class="row">
+    <div class="div1">
+        <div id="education">
+            <section>
+                <h1 class="heading titulo">Educación</h1>
+                <div class="education-block" *ngIf="isLogged">
+                    <div style="text-align:center" *ngIf="isLogged">
+                        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+                            <i class="bi bi-card-text"></i> Añadir Educación
+                        </button>
+                    </div>
+                </div>
+
+                <div class="education-block" *ngFor="let Educacion of educacion">
+                    <h3>{{Educacion.nombreE}}</h3>
+                    <h5>{{Educacion.descripcionE}}</h5>
+                    <img class="imagenes3" src="../../../assets/pngegg.png">
+                    <div style="float:right" *ngIf="isLogged">
+                        <button class="btn btn-success" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"></i></button>
+                    </div>
+                    <div style="float:right" *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash-fill"></i></button>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+    <!-- <div class="col-lg-11">
+        <h2>Formación Profesional</h2>
+        <ul>
+            <li><h4>Técnico Superior en Desarrollo Web y Aplicaciones Digitales</h4></li>
+            <h5>Abril 2022 - Actualidad</h5>
+        </ul>
+        <ul>
+            <li><h4>Técnico Superior en Desarrollo de Software, Instituto Tecnológico Río Cuarto</h4></li>
+            <h5>Marzo 2021 - Actualidad</h5>
+        </ul>
+        <h2>Cursos</h2>
+        <ul>
+            <li><h4>Segunda etapa del Plan Argentina Programa: #YoProgramo, Ministerio de Desarrollo Productivo</h4></li>
+            <h5>Febrero 2022 - Actualidad</h5>
+        </ul>
+        <ul>
+            <li><h4>Primera etapa del Plan Argentina Programa: #SéProgramar, Ministerio de Desarrollo Productivo</h4></li>
+            <h5>Octubre 2021 - Diciembre 2021</h5>
+        </ul>
+        <ul>
+            <li><h4>Formación en Herramientas Digitales, Habilidades Blandas y de Acción Ciudadana, BA Multiplica</h4></li>
+            <h5>Octubre 2021 - Diciembre 2021</h5>
+        </ul>
+        <ul>
+            <li><h4>Curso de Análisis de Datos en Python, IEEE-ITBA Student Chapter</h4></li>
+            <h5>Octubre 2021</h5>
+        </ul>
+        <ul>
+            <li><h4>Introducción al Lenguaje de Programación en Python, IEEE-ITBA Student Chapter</h4></li>
+            <h5>Agosto 2021</h5>
+        </ul>
+        <ul>
+            <li><h4>Introducción al Lenguaje de Programación, Educación IT</h4></li>
+            <h5>Agosto 2021</h5>
+        </ul>
+        <ul>
+            <li><h4>Diseño Web con HTML5 + CSS, Fundación Telefónica Movistar</h4></li>
+            <h5>Agosto 2021</h5>
+        </ul>
+        <ul>
+            <li><h4>Reparación de Celulares, Instituto Tecnológico Río Cuarto</h4></li>
+            <h5>Julio 2021 - Septiembre 2021</h5>
+        </ul>
+        <ul>
+            <li><h4>Herramientas para la Administración, Ministerio de Promoción del Empleo y de la Economía Familiar - CBA Me capacita</h4></li>
+            <h5>Mayo 2020</h5>
+        </ul>
+        <ul>
+            <li><h4>Introducción en Informática, Campus Virtual - Universidad Nacional de Córdoba</h4></li>
+            <h5>Abril 2020</h5>
+        </ul>
+    </div> -->

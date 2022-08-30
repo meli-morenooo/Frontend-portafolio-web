@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank">
+                <img src="../../../assets/APLogo.png" alt="logoAP" id="logoAP">
+            </a>
+        </div>
+    
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/melisa-moreno-0b4163212/" target="_blank"><img src="../../../assets/linkedin.png" alt="Linkedin" id="linkedin"></a>
+            <a href="https://twitter.com/meli_morenooo" target="_blank"><img src="../../../assets/twitter.png" alt="Twitter" id="twitter"></a>
+            <a href="https://www.instagram.com/meli.morenoo/" target="_blank"><img src="../../../assets/instagram.png" alt="Instagram" id="instagram"></a>
+            <a href="https://github.com/meli-morenooo" target="_blank"><img src="../../../assets/github.png" alt="GitHub" id="github"></a>
+            <a href="https://www.facebook.com/melisa.moreno.102/" target="_blank"><img src="../../../assets/facebook.png" alt="Facebook" id="facebook"></a>
+        </div>
+        <button type="button" class="btn btn-outline-light boton" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+        <button type="button" class="btn btn-outline-light boton" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+    </div>
+</div>
